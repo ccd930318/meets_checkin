@@ -3,7 +3,7 @@
 # 這是for 會議室:meets 、 報到表單: google
 # 有用其他的要在依照不同網頁調整爬的內容，框和流程大概是這樣
 # 直接照抄一定不能用 :)
-
+```python
 import requests
 from bs4 import BeautifulSoup
 import time
@@ -118,3 +118,4 @@ try:
     # job()
 except Exception as e: 
     print(e)
+```
