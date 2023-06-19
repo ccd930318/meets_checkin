@@ -44,10 +44,11 @@ def job():
     except:
         pass
     time.sleep(2)
-    searchButtonElement = driver.find_element(By.ID,'localVideoContainer')
-    time.sleep(2)
-    ActionChains(driver).click(searchButtonElement).perform()
-    time.sleep(2)
+    #這邊原本會關掉畫廊模式，但發現人數只要超過10人，沒有滾動名單列的話CLASS反而不完整
+    # searchButtonElement = driver.find_element(By.ID,'localVideoContainer')
+    # time.sleep(2)
+    # ActionChains(driver).click(searchButtonElement).perform()
+    # time.sleep(2)
     
     # print(namelist)
     namelist = driver.find_elements(By.CSS_SELECTOR, ".css-5bay1g-displayName")
